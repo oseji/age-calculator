@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Age calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputSection">
+        <div class="inputGrp">
+          <label for="day">Day</label>
+          <input
+            type="number"
+            name="day"
+            id="day"
+            class="inputForm"
+            placeholder="DD"
+          />
+        </div>
+
+        <div class="inputGrp">
+          <label for="month">Month</label>
+          <input
+            type="number"
+            name="month"
+            id="month"
+            class="inputForm"
+            placeholder="MM"
+          />
+        </div>
+
+        <div class="inputGrp">
+          <label for="year">Year</label>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            class="inputForm"
+            placeholder="YYYY"
+          />
+        </div>
+      </div>
+
+      <div class="arrowSection">
+        <div class="line"></div>
+        <img src="assets/images/icon-arrow.svg" alt="arrow" class="arrow" />
+      </div>
+
+      <div class="resultSection">
+        <div class="resultGrp">
+          <p class="years dash resultText">--</p>
+          <p class="resultText">years</p>
+        </div>
+
+        <div class="resultGrp">
+          <p class="months dash resultText">--</p>
+          <p class="resultText">months</p>
+        </div>
+
+        <div class="resultGrp">
+          <p class="days dash resultText">--</p>
+          <p class="resultText">days</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
