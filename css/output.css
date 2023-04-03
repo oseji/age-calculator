@@ -558,7 +558,22 @@ input[type="number"]::-webkit-inner-spin-button,
 
 body {
   --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+label {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.closed {
+  height: 0px;
+  overflow: hidden;
+}
+
+.open {
+  height: auto;
+  overflow: visible;
 }
 
 .container {
@@ -589,9 +604,33 @@ body {
   border-radius: 0.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
   padding: 0.75rem;
   font-weight: 700;
+}
+
+.dayErr {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.monthErr {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.yearErr {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: italic;
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .arrowSection {
@@ -624,7 +663,7 @@ body {
 
 .arrow:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .resultGrp {

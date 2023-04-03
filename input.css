@@ -11,7 +11,19 @@
 }
 
 body {
-  @apply bg-slate-200;
+  @apply bg-slate-400;
+}
+
+label {
+  @apply font-bold uppercase;
+}
+
+.closed {
+  @apply h-0 overflow-hidden;
+}
+
+.open {
+  @apply h-auto overflow-visible;
 }
 
 .container {
@@ -27,7 +39,17 @@ body {
 }
 
 .inputForm {
-  @apply p-3 w-9/12 rounded-lg border border-black font-bold;
+  @apply p-3 w-9/12 rounded-lg border border-slate-400 font-bold;
+}
+
+.dayErr {
+  @apply text-red-500 text-xs italic;
+}
+.monthErr {
+  @apply text-red-500 text-xs italic;
+}
+.yearErr {
+  @apply text-red-500 text-xs italic;
 }
 
 .arrowSection {
@@ -39,7 +61,7 @@ body {
 }
 
 .arrow {
-  @apply w-20 bg-purple-700 p-5 rounded-full ml-auto cursor-pointer hover:bg-purple-900 transition ease-in-out duration-200;
+  @apply w-20 bg-purple-700 p-5 rounded-full ml-auto cursor-pointer hover:bg-black transition ease-in-out duration-200;
 }
 
 .resultGrp {
