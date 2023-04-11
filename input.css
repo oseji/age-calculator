@@ -19,41 +19,35 @@ label {
 }
 
 .closed {
-  @apply h-0 overflow-hidden;
+  @apply hidden;
 }
 
 .open {
-  @apply h-auto overflow-visible;
+  @apply block;
 }
 
 .container {
-  @apply w-1/2 mx-auto mt-20 p-5 rounded-xl bg-white;
+  @apply w-11/12 lg:w-1/2 mx-auto mt-20 p-5 rounded-xl bg-white;
 }
 
 .inputSection {
-  @apply flex flex-row w-9/12;
+  @apply flex flex-row  w-full lg:w-9/12;
 }
 
 .inputGrp {
-  @apply flex flex-col gap-2;
+  @apply flex flex-col items-center lg:items-start gap-2;
 }
 
 .inputForm {
   @apply p-3 w-9/12 rounded-lg border border-slate-400 font-bold;
 }
 
-.dayErr {
-  @apply text-red-500 text-xs italic;
-}
-.monthErr {
-  @apply text-red-500 text-xs italic;
-}
-.yearErr {
+.errText {
   @apply text-red-500 text-xs italic;
 }
 
 .arrowSection {
-  @apply flex flex-row items-center;
+  @apply flex flex-row items-center my-4 lg:my-0;
 }
 
 .line {
@@ -61,7 +55,7 @@ label {
 }
 
 .arrow {
-  @apply w-20 bg-purple-700 p-5 rounded-full ml-auto cursor-pointer hover:bg-black transition ease-in-out duration-200;
+  @apply w-16 lg:w-20 bg-purple-700 p-5 rounded-full ml-auto cursor-pointer hover:bg-black transition ease-in-out duration-200;
 }
 
 .resultGrp {
@@ -73,5 +67,5 @@ label {
 }
 
 .resultText {
-  @apply text-6xl font-bold;
+  @apply text-5xl lg:text-6xl font-bold;
 }

@@ -567,36 +567,53 @@ label {
 }
 
 .closed {
-  height: 0px;
-  overflow: hidden;
+  display: none;
 }
 
 .open {
-  height: auto;
-  overflow: visible;
+  display: block;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
-  width: 50%;
+  width: 91.666667%;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.25rem;
 }
 
+@media (min-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+}
+
 .inputSection {
   display: flex;
-  width: 75%;
+  width: 100%;
   flex-direction: row;
+}
+
+@media (min-width: 1024px) {
+  .inputSection {
+    width: 75%;
+  }
 }
 
 .inputGrp {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .inputGrp {
+    align-items: flex-start;
+  }
 }
 
 .inputForm {
@@ -609,23 +626,7 @@ label {
   font-weight: 700;
 }
 
-.dayErr {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-style: italic;
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.monthErr {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-style: italic;
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.yearErr {
+.errText {
   font-size: 0.75rem;
   line-height: 1rem;
   font-style: italic;
@@ -634,9 +635,18 @@ label {
 }
 
 .arrowSection {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .arrowSection {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .line {
@@ -648,7 +658,7 @@ label {
 
 .arrow {
   margin-left: auto;
-  width: 5rem;
+  width: 4rem;
   cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
@@ -666,6 +676,12 @@ label {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 1024px) {
+  .arrow {
+    width: 5rem;
+  }
+}
+
 .resultGrp {
   margin-bottom: 1.25rem;
   display: flex;
@@ -678,7 +694,14 @@ label {
 }
 
 .resultText {
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .resultText {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
